@@ -17,6 +17,9 @@ import sys, os
 from utils.state import load_state
 from db import init_db, get_user
 init_db()
+from db import add_user
+
+add_user("prakriti")
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
