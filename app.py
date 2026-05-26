@@ -19,8 +19,8 @@ from db import init_db, get_user
 init_db()
 from db import add_user
 
-add_user("prakriti")
-add_user("prashant")
+#add user here - add_user("username")
+
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
